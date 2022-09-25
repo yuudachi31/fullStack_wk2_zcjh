@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './component/Header';
+import Sidebar from './component/Sidebar'
+import HomeValue from './component/HomeValue';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="container  h-screen mx-auto ">
+  <Header></Header>
+ <div className='flex max-w-1024  mx-auto'>
+  <Sidebar></Sidebar>
+  <HomeValue></HomeValue>
+ </div>
+  
+  
+  </div>
   );
 }
 
